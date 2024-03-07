@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>CRUDS Test</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="CRUDS Products Test">
+   <meta name="keywords" content="CRUDS Products Test">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="author" content="AHMED RASHED" />
+   <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+
+   <header class="container-fluid pt-4 pb-3">
+      <h1 class="fs-2 fw-bold text-center">CRUDs Products</h1>
+   </header>
+   
+   <div class="line w-100 mt-2 mb-3"></div>
+
+   <section class="container">
+      <div class="bg-body py-5">
+         <h2 class="fs-3 fw-bold text-center text-decoration-underline mb-5">Data of Products..</h2>
+
+         <div class="form-group row justify-content-center">
+            <div class="col-lg-6">
+               <select id="pName" type="text" placeholder="Product Name.." class="form-control mb-2"  >
+                  <option value="">Select Product Name</option>
+                  <option value="Bread" id="" >នំប៉័ងកៀប</option>
+                  <!-- Add more options as needed -->
+               </select>
+               <div id="alertName" class="alert alert-danger p-2 d-none">Should be consisting of a statement consists of a capital letter and 2-10 small letters...</div>
+            </div>
+            <div class="col-lg-6">
+               <select id="pPrice" class="form-control mb-2">
+                  <option value="0">Price</option>
+                  <option value="1">$1</option>
+                  <!-- Add more options as needed -->
+               </select>
+               <div id="alertPrice" class="alert alert-danger p-2 d-none">Should be in range from 50-10000 $...</div>
+            </div>
+            <div class="col-lg-6">
+               <input id="pCat" type="text" placeholder="QTY" class="form-control mb-2">
+               <div id="alertCate" class="alert alert-danger p-2 d-none"></div>
+            </div>
+            <div class="col-lg-6">
+               <textarea id="pDesc" placeholder="Product Description.." class="form-control mb-2"></textarea>
+            </div>
+         </div>
+
+         <div class="buttons row justify-content-center">
+            <div class="col-lg-6 text-center text-lg-end">
+               <button class="btn btn-primary mt-3 me-lg-2 w-100" id="updateBtn">Update Product</button>
+               <button class="btn btn-primary mt-3 w-100" id="resetBtn">Reset Form</button>
+            </div>
+            <div class="col-lg-6 text-center text-lg-start">
+               <button class="btn btn-primary mt-3 w-100" id="addBtn">Add Product</button>
+            </div>
+         </div>
+
+         <div class="table-responsive mt-4">
+            <table class="table table-striped text-center">
+               <thead>
+                  <th>Number</th>
+                  <th>Product Name</th>
+                  <th>Product Price</th>
+                  <th>QTY</th>
+                  <th>Product Description</th>
+                  <th>Update</th>
+                  <th>Delete</th>
+               </thead>
+               <tbody id="myTable">
+                  
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </section>
+
+   <div class="line w-100 my-3"></div>
+
+   <footer class="container-fluid py-3 text-center">
+      <h3 class="fs-6 fw-bold">&copy; 2022 CRUDs Products Info..</h3>
+   </footer>
+
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>
